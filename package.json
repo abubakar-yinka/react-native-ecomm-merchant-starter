@@ -38,7 +38,7 @@
     "test:ci": "pnpm run test --coverage",
     "test:watch": "pnpm run test --watch",
     "install-maestro": "curl -Ls 'https://get.maestro.mobile.dev' | bash",
-    "e2e-test": "maestro test .maestro/ -e APP_ID=com.bridge-merchant-starter.development"
+    "e2e-test": "maestro test .maestro/ -e APP_ID=com.bridge_merchant_starter.development"
   },
   "dependencies": {
     "@expo/metro-runtime": "^4.0.0",
