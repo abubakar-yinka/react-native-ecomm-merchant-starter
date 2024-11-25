@@ -4,10 +4,22 @@ import Svg, { Path } from 'react-native-svg';
 
 export function Home({ color = '#000', ...props }: SvgProps) {
   return (
-    <Svg width={24} height={24} viewBox="0 0 24 24" fill="none" {...props}>
+    <Svg width={27} height={25} viewBox="0 0 27 25" fill="none" {...props}>
       <Path
-        d="M12.848 2.751a1.2 1.2 0 0 0-1.697 0l-8.4 8.4a1.2 1.2 0 1 0 1.698 1.697l.351-.351V20.4A1.2 1.2 0 0 0 6 21.6h2.4a1.2 1.2 0 0 0 1.2-1.2V18a1.2 1.2 0 0 1 1.2-1.2h2.4a1.2 1.2 0 0 1 1.2 1.2v2.4a1.2 1.2 0 0 0 1.2 1.2H18a1.2 1.2 0 0 0 1.2-1.2v-7.903l.352.351a1.2 1.2 0 1 0 1.697-1.697l-8.4-8.4Z"
-        fill={color}
+        d="M3.963 9.415l9.541-6.872 9.541 6.872v10.8c0 .52-.223 1.02-.62 1.388a2.21 2.21 0 01-1.5.575H6.083a2.21 2.21 0 01-1.5-.575 1.893 1.893 0 01-.62-1.389V9.415z"
+        stroke={color}
+        strokeOpacity={0.56}
+        strokeWidth={1.96347}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <Path
+        d="M10.324 22.178V12.36h6.36v9.818"
+        stroke={color}
+        strokeOpacity={0.56}
+        strokeWidth={1.96347}
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </Svg>
   );

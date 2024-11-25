@@ -1,21 +1,24 @@
+/* eslint-disable max-lines-per-function */
 /* eslint-disable react/no-unstable-nested-components */
-import { Link, Redirect, SplashScreen, Tabs } from 'expo-router';
+import { Redirect, SplashScreen, Tabs } from 'expo-router';
 import React, { useCallback, useEffect } from 'react';
 
-import { Pressable, Text } from '@/components/ui';
 import {
-  Feed as FeedIcon,
-  Settings as SettingsIcon,
-  Style as StyleIcon,
+  Home as HomeIcon,
+  Order as OrderIcon,
+  Profile as ProfileIcon,
+  Search as SearchIcon,
+  Trends as TrendsIcon,
 } from '@/components/ui/icons';
-import { useAuth, useIsFirstTime } from '@/lib';
+import { useAuth } from '@/lib';
 
 export default function TabLayout() {
   const status = useAuth.use.status();
-  const [isFirstTime] = useIsFirstTime();
+
   const hideSplash = useCallback(async () => {
     await SplashScreen.hideAsync();
   }, []);
+
   useEffect(() => {
     if (status !== 'idle') {
       setTimeout(() => {
@@ -24,52 +27,64 @@ export default function TabLayout() {
     }
   }, [hideSplash, status]);
 
-  if (isFirstTime) {
-    return <Redirect href="/onboarding" />;
-  }
   if (status === 'signOut') {
     return <Redirect href="/login" />;
   }
   return (
-    <Tabs>
+    <Tabs initialRouteName='search'>
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Feed',
-          tabBarIcon: ({ color }) => <FeedIcon color={color} />,
-          headerRight: () => <CreateNewPostLink />,
-          tabBarButtonTestID: 'feed-tab',
+          title: 'Home',
+          tabBarIcon: ({ color }) => <HomeIcon color={color} />,
+          tabBarActiveTintColor: '#12AF37',
+          tabBarButtonTestID: 'home-tab',
         }}
       />
 
       <Tabs.Screen
-        name="style"
+        name="search"
         options={{
-          title: 'Style',
+          title: 'Search',
           headerShown: false,
-          tabBarIcon: ({ color }) => <StyleIcon color={color} />,
-          tabBarButtonTestID: 'style-tab',
+          tabBarIcon: ({ color }) => <SearchIcon color={color} />,
+          tabBarActiveTintColor: '#12AF37',
+          tabBarButtonTestID: 'search-tab',
         }}
       />
+
       <Tabs.Screen
-        name="settings"
+        name="trends"
         options={{
-          title: 'Settings',
+          title: 'Trends',
           headerShown: false,
-          tabBarIcon: ({ color }) => <SettingsIcon color={color} />,
-          tabBarButtonTestID: 'settings-tab',
+          tabBarIcon: ({ color }) => <TrendsIcon color={color} />,
+          tabBarActiveTintColor: '#12AF37',
+          tabBarButtonTestID: 'trends-tab',
+        }}
+      />
+
+      <Tabs.Screen
+        name="order"
+        options={{
+          title: 'Order',
+          headerShown: false,
+          tabBarIcon: ({ color }) => <OrderIcon color={color} />,
+          tabBarActiveTintColor: '#12AF37',
+          tabBarButtonTestID: 'order-tab',
+        }}
+      />
+
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+          headerShown: false,
+          tabBarIcon: ({ color }) => <ProfileIcon color={color} />,
+          tabBarActiveTintColor: '#12AF37',
+          tabBarButtonTestID: 'profile-tab',
         }}
       />
     </Tabs>
   );
 }
-
-const CreateNewPostLink = () => {
-  return (
-    <Link href="/feed/add-post" asChild>
-      <Pressable>
-        <Text className="px-3 text-primary-300">Create</Text>
-      </Pressable>
-    </Link>
-  );
-};

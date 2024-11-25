@@ -32,13 +32,11 @@ require('dotenv').config({
  * for example: if the APP_ENV is staging, the bundle id will be com.bridge-merchant-starter.staging
  */
 
-// TODO: Replace these values with your own
-
 const BUNDLE_ID = 'com.bridge-merchant-starter'; // ios bundle id
 const PACKAGE = 'com.bridge-merchant-starter'; // android package name
 const NAME = 'Bridge Merchant'; // app name
-const EXPO_ACCOUNT_OWNER = 'expo-owner'; // expo account owner
-const EAS_PROJECT_ID = 'c3e1075b-6fe7-4686-aa49-35b46a229044'; // eas project id
+const EXPO_ACCOUNT_OWNER = 'abubakar_y_i'; // expo account owner
+const EAS_PROJECT_ID = 'c9c1c92c-330d-43f7-9249-d909a61192c7'; // eas project id
 const SCHEME = 'bridgeMerchant'; // app scheme
 
 /**
@@ -87,6 +85,7 @@ const client = z.object({
 const buildTime = z.object({
   EXPO_ACCOUNT_OWNER: z.string(),
   EAS_PROJECT_ID: z.string(),
+
   // ADD YOUR BUILD TIME ENV VARS HERE
   SECRET_KEY: z.string(),
 });
@@ -114,6 +113,7 @@ const _clientEnv = {
 const _buildTimeEnv = {
   EXPO_ACCOUNT_OWNER,
   EAS_PROJECT_ID,
+
   // ADD YOUR ENV VARS HERE TOO
   SECRET_KEY: process.env.SECRET_KEY,
 };

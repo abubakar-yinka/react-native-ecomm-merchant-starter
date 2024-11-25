@@ -2,13 +2,13 @@ import * as React from 'react';
 
 import { FocusAwareStatusBar, Text, View } from '@/components/ui';
 
-const Home = () => {
+const Order = () => {
   return (
     <View className="flex-1 items-center justify-center">
       <FocusAwareStatusBar />
-      <Text className="text-base">Home Screen</Text>
+      <Text className="text-base">Order Screen</Text>
     </View>
   );
 };
 
-export default Home;
+export default Order;

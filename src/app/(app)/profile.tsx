@@ -14,13 +14,13 @@ import {
   View,
 } from '@/components/ui';
 import { Github, Rate, Share, Support, Website } from '@/components/ui/icons';
-import { translate, useAuth } from '@/lib';
+import { translate } from '@/lib';
 
-export default function Settings() {
-  const signOut = useAuth.use.signOut();
+export default function Profile() {
   const { colorScheme } = useColorScheme();
   const iconColor =
     colorScheme === 'dark' ? colors.neutral[400] : colors.neutral[500];
+
   return (
     <>
       <FocusAwareStatusBar />
@@ -72,12 +72,6 @@ export default function Settings() {
               onPress={() => {}}
             />
           </ItemsContainer>
-
-          <View className="my-8">
-            <ItemsContainer>
-              <Item text="settings.logout" onPress={signOut} />
-            </ItemsContainer>
-          </View>
         </View>
       </ScrollView>
     </>
