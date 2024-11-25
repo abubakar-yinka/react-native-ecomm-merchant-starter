@@ -19,17 +19,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Override packageManager for Yarn
-        run: |
-          jq '.packageManager="yarn@1.22.22"' package.json > temp.json && mv temp.json package.json
-
-      - name: Setup Corepack and Yarn
-        run: |
-          corepack enable
-          corepack prepare yarn@1.22.22 --activate
-
-      - name: Install dependencies
-        run: yarn install
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18.x
+          cache: yarn
 
       - name: Setup EAS
         uses: expo/expo-github-action@v8
@@ -37,5 +31,10 @@ jobs:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
 
+      - name: Install dependencies
+        run: yarn install
+
       - name: Create preview
-        run: yarn eas update --auto
+        uses: expo/expo-github-action/preview@v8
+        with:
+          command: eas update --auto
