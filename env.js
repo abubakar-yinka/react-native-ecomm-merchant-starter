@@ -32,7 +32,7 @@ require('dotenv').config({
  * for example: if the APP_ENV is staging, the bundle id will be com.bridge_merchant_starter.staging
  */
 
-const BUNDLE_ID = 'com.bridge_merchant_starter'; // ios bundle id
+const BUNDLE_ID = 'com.bridge'; // ios bundle id
 const PACKAGE = 'com.bridge_merchant_starter'; // android package name
 const NAME = 'Bridge Merchant'; // app name
 const EXPO_ACCOUNT_OWNER = 'abubakar_y_i'; // expo account owner
