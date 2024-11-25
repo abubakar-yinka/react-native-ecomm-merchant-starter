@@ -1,6 +1,6 @@
 /* eslint-disable max-lines-per-function */
 /* eslint-disable react/no-unstable-nested-components */
-import { Redirect, SplashScreen, Tabs } from 'expo-router';
+import { SplashScreen, Tabs } from 'expo-router';
 import React, { useCallback, useEffect } from 'react';
 
 import {
@@ -27,11 +27,8 @@ export default function TabLayout() {
     }
   }, [hideSplash, status]);
 
-  if (status === 'signOut') {
-    return <Redirect href="/login" />;
-  }
   return (
-    <Tabs initialRouteName='search'>
+    <Tabs initialRouteName="search">
       <Tabs.Screen
         name="index"
         options={{
