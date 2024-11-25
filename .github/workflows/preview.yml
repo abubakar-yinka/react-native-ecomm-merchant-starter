@@ -22,8 +22,8 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18.x
-          cache: yarn
+          node-version: 20
+          cache: 'pnpm'
 
       - name: Setup EAS
         uses: expo/expo-github-action@v8
@@ -31,8 +31,9 @@ jobs:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
 
-      - name: Install dependencies
-        run: yarn install
+      - name: 📦 Install Project Dependencies
+        run: pnpm install --frozen-lockfile
+        shell: bash
 
       - name: Create preview
         uses: expo/expo-github-action/preview@v8
