@@ -32,27 +32,37 @@ This project is a mobile app product search catalog designed as part of the Brid
 - 🧪 Unit testing setup with [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
 - 🔍 E2E testing capabilities with [Maestro](https://maestro.mobile.dev/) for comprehensive app testing.
 
-## Installation and Setup
+## Requirements
 
-1.	Clone the repository:
+- [React Native dev environment ](https://reactnative.dev/docs/environment-setup)
+- [Node.js LTS release](https://nodejs.org/en/)
+- [Git](https://git-scm.com/)
+- [Watchman](https://facebook.github.io/watchman/docs/install#buildinstall), required only for macOS or Linux users
+- [Pnpm](https://pnpm.io/installation)
+- [VS Code Editor](https://code.visualstudio.com/download) ⚠️ Make sure to install all recommended extension from `.vscode/extensions.json`
 
+## 👋 Quick start
+
+Clone the repo to your machine and install deps :
+
+```sh
+git clone https://github.com/<your-username>/bridge-merchant-starter
+
+cd ./bridge-merchant-starter
+
+pnpm install
 ```
-git clone https://github.com/<your-username>/bridge-merchant-app.git
-cd bridge-merchant-app
+
+To run the app on ios
+
+```sh
+pnpm ios
 ```
 
-	
- 2.	Install dependencies:
+To run the app on Android
 
-```
-npm install
-```
-
-3.	Run the project:
-
-```
-npx react-native run-android # For Android
-npx react-native run-ios     # For iOS
+```sh
+pnpm android
 ```
 
 ## API Integration
@@ -60,10 +70,10 @@ npx react-native run-ios     # For iOS
 The app uses the FakeStoreAPI for fetching products and categories. The categories provided by the API are mapped to the following UI-specific categories:
 
 API Category |	UI Category
-electronics |	Fresh Food & Vegetables
-jewelery |	Dairy & Eggs
-men's clothing |	Bakery
-women's clothing |	Meat
+- electronics  |  Fresh Food & Vegetables
+- jewelery  |	Dairy & Eggs
+- men's clothing  |	Bakery
+- women's clothing  |	Meat
 
 ## Features Implementation
 
