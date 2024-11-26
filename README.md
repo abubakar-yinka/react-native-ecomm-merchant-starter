@@ -24,21 +24,26 @@ This project is a mobile app product search catalog designed as part of the Brid
 
 ## Installation and Setup
 
-	1.	Clone the repository:
+1.	Clone the repository:
 
+```
 git clone https://github.com/<your-username>/bridge-merchant-app.git
 cd bridge-merchant-app
+```
 
+	
+ 2.	Install dependencies:
 
-	2.	Install dependencies:
-
+```
 npm install
+```
 
+3.	Run the project:
 
-	3.	Run the project:
-
+```
 npx react-native run-android # For Android
 npx react-native run-ios     # For iOS
+```
 
 ## API Integration
 
