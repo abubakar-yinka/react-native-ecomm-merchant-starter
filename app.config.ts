@@ -33,7 +33,11 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   userInterfaceStyle: 'automatic',
   newArchEnabled: true,
   updates: {
+    url: 'https://u.expo.dev/c9c1c92c-330d-43f7-9249-d909a61192c7',
     fallbackToCacheTimeout: 0,
+  },
+  runtimeVersion: {
+    policy: 'appVersion',
   },
   assetBundlePatterns: ['**/*'],
   ios: {
@@ -72,7 +76,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     'expo-localization',
     'expo-router',
     ['app-icon-badge', appIconBadgeConfig],
-    ["react-native-edge-to-edge"]
+    ['react-native-edge-to-edge'],
   ],
   extra: {
     ...ClientEnv,
