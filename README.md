@@ -6,12 +6,12 @@ This project is a mobile app product search catalog designed as part of the Brid
 
 ## Features
 
-	•	Fetch and display products and categories from FakeStoreAPI.
-	•	Map API categories to UI-specific categories.
-	•	Persist user search history locally.
-	•	Dynamically filter and display search results for products and categories.
-	•	Optimized user interface with React Native.
-	•	Integration of animations and transitions (optional).
+•	Fetch and display products and categories from FakeStoreAPI.
+•	Map API categories to UI-specific categories.
+•	Persist user search history locally.
+•	Dynamically filter and display search results for products and categories.
+•	Optimized user interface with React Native.
+•	Integration of animations and transitions (optional).
 
 ## ⭐ Key Features / Technologies Used
 
