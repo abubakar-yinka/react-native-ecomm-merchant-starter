@@ -292,14 +292,14 @@ On loading the app:
 ## Release Files
 
 Download the release files:
-	•	APK
-	•	IPA
+- APK
+- IPA
 
 ## Testing
 
-•	Tested on both Android and iOS emulators.
-•	Verified API integration and local storage functionality.
-•	Ensured UI consistency with Figma designs.
+- Tested on both Android and iOS emulators.
+- Verified API integration and local storage functionality.
+- Ensured UI consistency with Figma designs.
 
 ## Submission
 
@@ -309,4 +309,4 @@ Release files are available on the repository under GitHub releases.
 ## Contact
 
 For further questions or clarifications, contact:
-	•	Email: maryammudasiru@gmail.com
+- Email: maryammudasiru@gmail.com
