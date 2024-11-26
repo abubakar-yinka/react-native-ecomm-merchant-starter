@@ -115,12 +115,155 @@ On loading the app:
 
 ### Code Structure
 
-	•	src Directory:
-	•	api/: API-related configurations and hooks.
-	•	components/: Reusable UI components (e.g., cards, buttons).
-	•	screens/: Screen-specific logic and layouts.
-	•	store/: Zustand state management setup.
-	•	utils/: Helper functions and storage utilities.
+```bash
+.
+├── README.md
+├── __mocks__
+│   ├── @gorhom
+│   │   └── bottom-sheet.ts
+│   ├── moti.ts
+│   ├── react-native-gesture-handler.ts
+│   └── react-native-keyboard-controller.ts
+├── app.config.ts
+├── assets
+│   ├── adaptive-icon.png
+│   ├── bakery.png
+│   ├── favicon.png
+│   ├── fonts
+│   │   └── Inter.ttf
+│   ├── fruits.png
+│   ├── icon.png
+│   ├── meat.png
+│   ├── oil.png
+│   └── splash-icon.png
+├── babel.config.js
+├── commitlint.config.js
+├── eas.json
+├── env.js
+├── expo-env.d.ts
+├── global.css
+├── jest-setup.ts
+├── jest.config.js
+├── lint-staged.config.js
+├── metro.config.js
+├── nativewind-env.d.ts
+├── package.json
+├── pnpm-lock.yaml
+├── scripts
+│   ├── genrate-apk-and-install
+│   └── i18next-syntax-validation.js
+├── src
+│   ├── api
+│   │   ├── categories
+│   │   │   ├── index.ts
+│   │   │   ├── types.ts
+│   │   │   └── use-categories.ts
+│   │   ├── common
+│   │   │   ├── api-provider.tsx
+│   │   │   ├── client.tsx
+│   │   │   ├── index.tsx
+│   │   │   └── utils.tsx
+│   │   ├── index.tsx
+│   │   ├── posts
+│   │   │   ├── index.ts
+│   │   │   ├── types.ts
+│   │   │   ├── use-add-post.ts
+│   │   │   ├── use-post.ts
+│   │   │   └── use-posts.ts
+│   │   ├── products
+│   │   │   ├── index.ts
+│   │   │   ├── types.ts
+│   │   │   └── use-products.ts
+│   │   └── types.ts
+│   ├── app
+│   │   ├── (app)
+│   │   │   ├── _layout.tsx
+│   │   │   ├── index.tsx
+│   │   │   ├── order.tsx
+│   │   │   ├── profile.tsx
+│   │   │   ├── search.tsx
+│   │   │   └── trends.tsx
+│   │   ├── +html.tsx
+│   │   ├── [...messing].tsx
+│   │   └── _layout.tsx
+│   ├── components
+│   │   ├── search
+│   │   │   ├── category-card.tsx
+│   │   │   └── product-card.tsx
+│   │   ├── settings
+│   │   │   ├── item.tsx
+│   │   │   ├── items-container.tsx
+│   │   │   ├── language-item.tsx
+│   │   │   └── theme-item.tsx
+│   │   └── ui
+│   │       ├── button.test.tsx
+│   │       ├── button.tsx
+│   │       ├── checkbox.test.tsx
+│   │       ├── checkbox.tsx
+│   │       ├── colors.js
+│   │       ├── focus-aware-status-bar.tsx
+│   │       ├── icons
+│   │       │   ├── add.tsx
+│   │       │   ├── arrow-right.tsx
+│   │       │   ├── caret-down.tsx
+│   │       │   ├── feed.tsx
+│   │       │   ├── filter.tsx
+│   │       │   ├── github.tsx
+│   │       │   ├── home.tsx
+│   │       │   ├── index.tsx
+│   │       │   ├── input-search.tsx
+│   │       │   ├── language.tsx
+│   │       │   ├── order.tsx
+│   │       │   ├── profile.tsx
+│   │       │   ├── rate.tsx
+│   │       │   ├── search.tsx
+│   │       │   ├── settings.tsx
+│   │       │   ├── share.tsx
+│   │       │   ├── style.tsx
+│   │       │   ├── support.tsx
+│   │       │   ├── trends.tsx
+│   │       │   └── website.tsx
+│   │       ├── image.tsx
+│   │       ├── index.tsx
+│   │       ├── input.test.tsx
+│   │       ├── input.tsx
+│   │       ├── list.tsx
+│   │       ├── modal-keyboard-aware-scroll-view.tsx
+│   │       ├── modal.tsx
+│   │       ├── progress-bar.tsx
+│   │       ├── select.test.tsx
+│   │       ├── select.tsx
+│   │       ├── text.tsx
+│   │       └── utils.tsx
+│   ├── lib
+│   │   ├── auth
+│   │   │   ├── index.tsx
+│   │   │   └── utils.tsx
+│   │   ├── env.js
+│   │   ├── hooks
+│   │   │   ├── index.tsx
+│   │   │   └── use-selected-theme.tsx
+│   │   ├── i18n
+│   │   │   ├── index.tsx
+│   │   │   ├── react-i18next.d.ts
+│   │   │   ├── resources.ts
+│   │   │   ├── types.ts
+│   │   │   └── utils.tsx
+│   │   ├── index.tsx
+│   │   ├── storage.tsx
+│   │   ├── store
+│   │   │   └── search.ts
+│   │   ├── test-utils.tsx
+│   │   ├── use-theme-config.tsx
+│   │   └── utils.ts
+│   ├── translations
+│   │   ├── ar.json
+│   │   └── en.json
+│   └── types
+│       └── index.ts
+├── tailwind.config.js
+└── tsconfig.json
+```
 
 ### Core Packages
 
