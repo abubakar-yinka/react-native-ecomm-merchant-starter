@@ -6,12 +6,12 @@ This project is a mobile app product search catalog designed as part of the Brid
 
 ## Features
 
-•	Fetch and display products and categories from FakeStoreAPI.
-•	Map API categories to UI-specific categories.
-•	Persist user search history locally.
-•	Dynamically filter and display search results for products and categories.
-•	Optimized user interface with React Native.
-•	Integration of animations and transitions (optional).
+- Fetch and display products and categories from FakeStoreAPI.
+- Map API categories to UI-specific categories.
+- Persist user search history locally.
+- Dynamically filter and display search results for products and categories.
+- Optimized user interface with React Native.
+- Integration of animations and transitions (optional).
 
 ## ⭐ Key Features / Technologies Used
 
@@ -80,34 +80,38 @@ API Category |	UI Category
 1. Display Categories and Products
 
 On loading the app:
-	•	Fetch all categories and products from the API.
-	•	Display categories with their associated design (per Figma).
+- Fetch all categories and products from the API.
+- Display categories with their associated design (per Figma).
 
 2. Search Functionality
 
-	•	Users can search for products and categories by keywords.
-	•	Search results display both products and categories matching the query.
+- Users can search for products and categories by keywords.
+- Search results display both products and categories matching the query.
 
 3. Persistent Search History
 
-	•	Store user search history locally using MMKV.
-	•	Limit history to the last 10 searches.
+- Store user search history locally using MMKV.
+- Limit history to the last 10 searches.
 
 4. User Interface
 
-	•	Designed per the Figma guidelines.
-	•	Added personal enhancements for improved UX.
+- Designed per the Figma guidelines.
+- Added personal enhancements for improved UX.
 
 ## How to Use
 
-	1.	Launch the app.
-	2.	View the categories and products on the home screen.
-	3.	Use the search bar to find specific items.
-	4.	Navigate between tabs for additional functionality (optional demo of blank pages).
+1. Launch the app.
+2. View the categories and products on the home screen.
+3. Use the search bar to find specific items.
+4. Navigate between tabs for additional functionality (optional demo of blank pages).
 
 ## Demo Video
 
+
+
 ## Development Details
+
+
 
 ### Code Structure
 
