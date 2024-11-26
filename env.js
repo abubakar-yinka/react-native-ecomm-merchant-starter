@@ -37,7 +37,7 @@ const PACKAGE = 'com.bridge_merchant_starter'; // android package name
 const NAME = 'Bridge Merchant'; // app name
 const EXPO_ACCOUNT_OWNER = 'abubakar_y_i'; // expo account owner
 const EAS_PROJECT_ID = 'c9c1c92c-330d-43f7-9249-d909a61192c7'; // eas project id
-const SCHEME = 'bridgeMerchant'; // app scheme
+const SCHEME = 'bridgemerchant'; // app scheme
 
 /**
  * We declare a function withEnvSuffix that will add a suffix to the variable name based on the APP_ENV

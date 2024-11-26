@@ -25,7 +25,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   name: Env.NAME,
   description: `${Env.NAME} Mobile App`,
   owner: Env.EXPO_ACCOUNT_OWNER,
-  scheme: [Env.SCHEME],
+  scheme: Env.SCHEME,
   slug: 'bridge-merchant',
   version: Env.VERSION.toString(),
   orientation: 'portrait',
