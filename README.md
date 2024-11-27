@@ -4,6 +4,7 @@
 
 This project is a mobile app product search catalog designed as part of the Bridge Merchant recruitment process. It aggregates products into categories, allowing users to search, view results, and manage search history. The app demonstrates skills in React Native, TypeScript, API integration, and clean code practices.
 
+
 ## Features
 
 - Fetch and display products and categories from FakeStoreAPI.
@@ -12,6 +13,7 @@ This project is a mobile app product search catalog designed as part of the Brid
 - Dynamically filter and display search results for products and categories.
 - Optimized user interface with React Native.
 - Integration of animations and transitions (optional).
+
 
 ## ⭐ Key Features / Technologies Used
 
@@ -32,6 +34,7 @@ This project is a mobile app product search catalog designed as part of the Brid
 - 🧪 Unit testing setup with [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
 - 🔍 E2E testing capabilities with [Maestro](https://maestro.mobile.dev/) for comprehensive app testing.
 
+
 ## Requirements
 
 - [React Native dev environment ](https://reactnative.dev/docs/environment-setup)
@@ -40,6 +43,7 @@ This project is a mobile app product search catalog designed as part of the Brid
 - [Watchman](https://facebook.github.io/watchman/docs/install#buildinstall), required only for macOS or Linux users
 - [Pnpm](https://pnpm.io/installation)
 - [VS Code Editor](https://code.visualstudio.com/download) ⚠️ Make sure to install all recommended extension from `.vscode/extensions.json`
+
 
 ## 👋 Quick start
 
@@ -65,6 +69,7 @@ To run the app on Android
 pnpm android
 ```
 
+
 ## API Integration
 
 The app uses the FakeStoreAPI for fetching products and categories. The categories provided by the API are mapped to the following UI-specific categories:
@@ -74,6 +79,7 @@ API Category |	UI Category
 - jewelery  |	Dairy & Eggs
 - men's clothing  |	Bakery
 - women's clothing  |	Meat
+
 
 ## Features Implementation
 
@@ -98,6 +104,7 @@ On loading the app:
 - Designed per the Figma guidelines.
 - Added personal enhancements for improved UX.
 
+
 ## How to Use
 
 1. Launch the app.
@@ -105,11 +112,14 @@ On loading the app:
 3. Use the search bar to find specific items.
 4. Navigate between tabs for additional functionality (optional demo of blank pages).
 
+
 ## Demo Video
 
 
 
+
 ## Development Details
+
 
 
 
@@ -265,6 +275,7 @@ On loading the app:
 └── tsconfig.json
 ```
 
+
 ### Core Packages
 
 - [Expo](https://docs.expo.io/)
@@ -289,11 +300,13 @@ On loading the app:
 - [Tailwind Variants](https://www.tailwind-variants.org/)
 - [Zod](https://zod.dev/)
 
+
 ## Release Files
 
 Download the release files:
 - APK
 - IPA
+
 
 ## Testing
 
@@ -301,10 +314,12 @@ Download the release files:
 - Verified API integration and local storage functionality.
 - Ensured UI consistency with Figma designs.
 
+
 ## Submission
 
 Code is hosted on GitHub at: GitHub Repository.
 Release files are available on the repository under GitHub releases.
+
 
 ## Contact
 
