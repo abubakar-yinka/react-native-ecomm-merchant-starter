@@ -1,6 +1,6 @@
 {
   "onboarding": {
-    "message": "Welcome to bridge merchant app site"
+    "message": "Welcome to the merchant app site"
   },
   "settings": {
     "about": "About",
@@ -29,5 +29,5 @@
     "version": "Version",
     "website": "Website"
   },
-  "welcome": "Welcome to bridge merchant app site"
+  "welcome": "Welcome to the merchant app site"
 }

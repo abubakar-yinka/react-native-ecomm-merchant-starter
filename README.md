@@ -46,9 +46,9 @@ This project is a mobile app product search catalog designed as part of the a re
 Clone the repo to your machine and install deps :
 
 ```sh
-git clone https://github.com/<your-username>/bridge-merchant-starter
+git clone https://github.com/<your-username>/react-native-ecomm-merchant-starter
 
-cd ./bridge-merchant-starter
+cd ./react-native-ecomm-merchant-starter
 
 pnpm install
 ```
