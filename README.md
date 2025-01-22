@@ -1,8 +1,8 @@
-# Bridge Merchant Recruitment Test
+# React Native Product Challenge
 
 ## Overview
 
-This project is a mobile app product search catalog designed as part of the Bridge Merchant recruitment process. It aggregates products into categories, allowing users to search, view results, and manage search history. The app demonstrates skills in React Native, TypeScript, API integration, and clean code practices.
+This project is a mobile app product search catalog designed as part of the a recruitment process. It aggregates products into categories, allowing users to search, view results, and manage search history. The app demonstrates skills in React Native, TypeScript, API integration, and clean code practices.
 
 ## Features
 
@@ -104,13 +104,6 @@ On loading the app:
 2. View the categories and products on the home screen.
 3. Use the search bar to find specific items.
 4. Navigate between tabs for additional functionality (optional demo of blank pages).
-
-## Demo Video
-
-
-
-## Development Details
-
 
 
 ### Code Structure
@@ -309,4 +302,4 @@ Release files are available on the repository under GitHub releases.
 ## Contact
 
 For further questions or clarifications, contact:
-- Email: maryammudasiru@gmail.com
+- Email: abubakaryinka75@gmail.com
